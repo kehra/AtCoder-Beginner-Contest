@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rust:
+    image: ruby:slim
+    volumes:
+      - .:/opt/rubyapp
+    environment:
+      - USER=`${USER}`
+    working_dir: /opt/rubyapp
+    stdin_open: true
