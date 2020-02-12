@@ -1,4 +1,5 @@
 n, k = gets.chomp.split.map(&:to_i)
+# 1からnまでの期待は、(1 + n) / 2で求まる
 dices = gets.chomp.split.map { |n| (1 + n.to_f) / 2.0 }
 
 ans = 0
